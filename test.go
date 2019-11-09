@@ -11,7 +11,6 @@ func main()  {
 			"message" :"maruiyi",
 		})
 		fmt.Println("hello,world")
-
 	})
 
 	router.Run(":8080")
