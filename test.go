@@ -7,8 +7,11 @@ import (
 func main()  {
 	router := gin.Default()
 	router.GET("/hello", func(context *gin.Context) {
-		context.JSON(200,"hello,world")
+		context.JSON(200,gin.H{
+			"message" :"maruiyi",
+		})
 		fmt.Println("hello,world")
+
 	})
 
 	router.Run(":8080")
